@@ -6,7 +6,7 @@ import * as Keycloak from 'keycloak-js';
 Vue.use(VueLogger);
 
 let initOptions = {
-  url: 'http://127.0.0.1:8080/auth', realm: 'keycloak-demo', clientId: 'app-vue', onLoad: 'login-required'
+  url: 'https://keycloak-postgres-operator.apps.ocp4.localdomain/auth', realm: 'tss', clientId: 'app-vue', onLoad: 'login-required'
 }
 
 let keycloak = Keycloak(initOptions);
